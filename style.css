@@ -281,6 +281,7 @@ margin: 0;
    .detailed_info_content{
     display: flex;
     width:90%;
+    height: 100%;
     margin: 0 auto;
     flex-direction: row;
    }
