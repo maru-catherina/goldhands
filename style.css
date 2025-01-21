@@ -10,6 +10,8 @@ dd orange #8B2F17
 body{
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     width: 100vw;
+    margin: 0;
+    padding: 0;
 }
 @font-face {
     font-family: 'Gravitas';
@@ -95,7 +97,7 @@ margin: 0;
     background-size: cover;
     background-position: center;
     padding-top: 100px;
-   width: 50vw;
+    width: 50vw;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -231,6 +233,7 @@ margin: 0;
 .services {
      background-color: #DDD0B0;
      padding: 50px;
+     
     }
 
     .services-container {
@@ -268,6 +271,8 @@ margin: 0;
         background-color:   #DDD0B0;
         padding: 50px;
         text-align: start;
+        
+        justify-content: center;
 
 
 
@@ -281,7 +286,6 @@ margin: 0;
    .detailed_info_content{
     display: flex;
     width:90%;
-    height: 100%;
     margin: 0 auto;
     flex-direction: row;
    }
@@ -302,34 +306,92 @@ margin: 0;
     }
     /* Раздел с контактной формой и контактной информацией */
 .contact {
-
+    width: 100%;
     background-color: #293245;
-     padding: 50px;}
+    padding-bottom: 50px;
+}
 .contact h1{
-    color:#c7b68b
+    color:#c7b68b;
+    margin:0;
+    padding-top:50px;
+    padding-bottom:50px;
 }
 
     .contact-column{
-        display: flex;
+    display: flex;
     flex-direction: row;
     width: 100%;
+    gap: 0;
     }
     .contact-column1{
-        width: 45%;
+        width: 40%;
         color: #c7b68b;
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         font-size: 22px;
     }
 
     .contact-column2{
-        width: 55%;
+        width: 60%;
     }
-    .contact-container {
-     display: flex;
-     flex-wrap: wrap;
-     justify-content: center;
-    }
-
+    
+     
+    
+    .contact-info {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        margin: 0 auto;
+        
+       }
+       .contact-info p{
+        width: 100%;
+        text-align: justify;
+       }
+       .contact-info ul {
+        list-style: none;
+        width: 100%;
+        text-align: justify;
+        margin: 0;
+        padding: 0%;
+       }
+   
+       .contact-info li {
+       margin-bottom: 10px;
+       
+       }
+       .contact-info a{
+           text-decoration: none;
+           color: #c7b68b;
+           text-align: justify;
+       }
+       .contact h3{
+        padding-top: 50px;
+       }
+       .social-links {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        gap: 20px;
+       }
+       .social-links img{
+           width: 50px;
+           height: 50px;
+       }
+       .social-links li {
+        margin-bottom: 10px;
+       }
+   
+       .social-links a {
+        text-decoration: none;
+        color: #333;
+       }
+   
+       .social-links a:hover {
+        color: #555;
+       }
+   
     .contact-form {
     display: flex;
     flex-direction: column;
@@ -399,47 +461,6 @@ margin: 0;
     outline:none;
 
 }
-    .contact-info {
-     width: 50%;
-    }
-
-    .contact-info ul {
-     list-style: none;
-     margin: 0;
-     padding: 0;
-    }
-
-    .contact-info li {
-    margin-bottom: 10px;
-    text-decoration: none;
-    }
-    .contact-info a{
-        text-decoration: none;
-        color: #c7b68b;
-    }
-    .social-links {
-     list-style: none;
-     margin: 0;
-     padding: 0;
-     display: flex;
-     gap: 20px;
-    }
-    .social-links img{
-        width: 50px;
-        height: 50px;
-    }
-    .social-links li {
-     margin-bottom: 10px;
-    }
-
-    .social-links a {
-     text-decoration: none;
-     color: #333;
-    }
-
-    .social-links a:hover {
-     color: #555;
-    }
 
     .reviews {
         background-color: #c7b68b;
@@ -448,6 +469,9 @@ margin: 0;
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        padding-top: 25px;
+        padding-bottom: 25px;
+        
     }
     .review {
         width: 40%;
@@ -494,9 +518,9 @@ margin: 0;
       #notification-error{
         
         position: fixed;
-        color: #293245;
+        color: #ED5515;
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        background-color: #ee4832;
+        background-color: #293245;
         font-size: 22px;
         top: 50%;
         left: 50%;
@@ -526,3 +550,4 @@ margin: 0;
      color: #c7b68b;
      text-decoration: underline;
     }
+
