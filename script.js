@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
             }
 
             // Smooth scroll to the detail section
-            targetSection.scrollIntoView({ behavior: 'smooth' });
+            serviceLinks.scrollIntoView({ behavior: 'smooth' });
         });
     });
 });
