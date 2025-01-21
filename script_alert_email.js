@@ -37,7 +37,22 @@ if (!name || !email || !message) {
   setTimeout(() => {
     notification.classList.add('hidden');
   }, 3000);
+form.reset(); // This will clear the form fields
 });
+ // Очистка формы после успешной отправки
+
+
+
+
+
+ window.onload = () => {
+  form.reset(); // This will clear the form fields when the page is reloaded
+
+  // Ensure the page scrolls to the top (use setTimeout to delay for a moment)
+  setTimeout(() => {
+    window.scrollTo(0, 0); // Scroll to the top of the page
+  }, 0);
+};
 
 // Скрытие оповещения при нажатии на background
 document.addEventListener('click', (event) => {
